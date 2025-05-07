@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.802.0",
+    "@fastly/js-compute": "^3.33.2",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@fastly/cli": "^11.0.0"
+  },
+  "scripts": {
+    "build": "js-compute-runtime --env ACCESS_KEY_ID=BUCKET_KEY_ID,SECRET_ACCESS_KEY=BUCKET_SECRET_ACCESS_KEY src/index.js bin/main.wasm ",
+    "start": "fastly compute serve",
+    "deploy": "fastly compute publish"
+  }
+}

@@ -1,0 +1,16 @@
+# This file describes a Fastly Compute package. To learn more visit:
+# https://www.fastly.com/documentation/reference/compute/fastly-toml
+
+authors = ["andresdoestreito@gmail.com"]
+cloned_from = "https://github.com/fastly/compute-starter-kit-javascript-default"
+description = "A test using the s3 SDK"
+language = "javascript"
+manifest_version = 3
+name = "ComputeStorage"
+service_id = "SjeuzEsesKi5tLD1WLpkX5"
+
+[local_server]
+
+[scripts]
+  build = "npm run build"
+  post_init = "npm install"
